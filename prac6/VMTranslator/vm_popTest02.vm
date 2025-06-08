@@ -1,0 +1,3 @@
+// Test pop into temp and pointer segments
+pop temp 5
+pop pointer 0

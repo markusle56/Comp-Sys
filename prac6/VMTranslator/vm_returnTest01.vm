@@ -1,0 +1,4 @@
+// Test return from a function that had 1 local
+function ReturnOne 1
+push constant 42
+return

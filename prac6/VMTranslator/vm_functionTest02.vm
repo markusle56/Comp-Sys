@@ -1,0 +1,2 @@
+// Test declaring a function with zero locals
+function MyFuncZero 0

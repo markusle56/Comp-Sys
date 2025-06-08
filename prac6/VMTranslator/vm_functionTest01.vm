@@ -1,0 +1,2 @@
+// Test declaring a function with 2 locals
+function foo.test 2

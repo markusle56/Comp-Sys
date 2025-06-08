@@ -1,0 +1,2 @@
+// Test calling a function with no arguments
+call MyFuncZero 0

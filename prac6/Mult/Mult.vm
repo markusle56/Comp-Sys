@@ -1,0 +1,88 @@
+// Calculates a = x*y
+// a is a local variable
+// x & y are static variables
+
+// Put your code here.
+push constant 0
+pop local 0
+
+push static 0 
+push constant 0
+lt
+if-goto NEG1
+
+push static 0
+pop temp 0
+push constant 0
+pop temp 2
+
+label SEC
+push static 1 
+push constant 0 
+lt
+if-goto NEG2
+
+push static 1
+pop temp 1
+push constant 0 
+pop temp 3
+
+label CHOOSE_COUNTER
+push temp 0
+push temp 1
+lt 
+if-goto SWAP
+
+label LOOP
+push temp 1
+push constant 0
+eq
+if-goto IS_NEG
+
+push local 0 
+push temp 0
+add
+pop local 0
+
+push temp 1
+push constant 1
+sub
+pop  temp 1
+goto LOOP
+
+label IS_NEG
+push temp 2
+push temp 3
+eq
+if-goto END
+
+push local 0
+neg
+pop local 0
+
+label END
+goto END
+
+
+label NEG1
+push static 0
+neg 
+pop temp 0
+push constant 1
+pop temp 2
+goto SEC
+
+label NEG2
+push static 1
+neg
+pop temp 1
+push constant 1
+pop temp 3
+goto CHOOSE_COUNTER
+
+label SWAP
+push temp 0
+push temp 1
+pop temp 0
+pop temp 1
+goto LOOP

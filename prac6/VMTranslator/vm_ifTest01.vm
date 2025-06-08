@@ -1,0 +1,5 @@
+// Test if-goto with non-zero value 
+push constant 5
+if-goto SKIP
+push constant 0      
+label SKIP

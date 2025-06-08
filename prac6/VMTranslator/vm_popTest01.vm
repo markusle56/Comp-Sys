@@ -1,0 +1,3 @@
+// Test pop into local and argument segments
+pop local 0
+pop argument 3

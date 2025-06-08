@@ -1,0 +1,3 @@
+// Test push from different segments
+push local 2
+push pointer 1

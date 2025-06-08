@@ -1,0 +1,5 @@
+// Test if-goto with zero value 
+push constant 0
+if-goto NO_JUMP
+push constant 111   
+label NO_JUMP

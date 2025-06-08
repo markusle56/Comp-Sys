@@ -1,0 +1,4 @@
+// Test calling a function with 2 arguments
+push constant 10
+push constant 20
+call foo.test 2

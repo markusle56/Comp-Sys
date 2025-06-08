@@ -1,0 +1,4 @@
+// Test bitwise OR: 6 | 3 = 7
+push constant 6
+push constant 3
+or

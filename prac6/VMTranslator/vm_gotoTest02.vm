@@ -1,0 +1,3 @@
+// Test jump forward to a label defined later
+goto FINISH
+label FINISH

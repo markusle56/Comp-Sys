@@ -1,0 +1,3 @@
+// Test unconditional jump to a label defined earlier
+label START
+goto START

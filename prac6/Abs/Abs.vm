@@ -1,0 +1,21 @@
+// Calculates y = |x|
+// x & y are static variables
+
+// Put your code here.
+push static 0
+push constant 0
+lt
+if-goto NEG
+
+push static 0
+goto STORE
+
+label NEG 
+push static 0
+neg
+
+label STORE
+pop static 1
+
+label END
+goto END

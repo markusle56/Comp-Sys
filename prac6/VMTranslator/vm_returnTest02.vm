@@ -1,0 +1,4 @@
+// Test return from a function with no locals
+function ReturnNone 0
+push constant 0
+return

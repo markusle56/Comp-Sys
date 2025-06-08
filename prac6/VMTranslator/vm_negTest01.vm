@@ -1,0 +1,3 @@
+// Test negation: get -8 from 8
+push constant 8
+neg

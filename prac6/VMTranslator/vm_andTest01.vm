@@ -1,0 +1,4 @@
+// Test bitwise AND: 6 & 3 = 2
+push constant 6
+push constant 3
+and
